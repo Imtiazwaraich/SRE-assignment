@@ -18,6 +18,8 @@ To deploy the infrastructure using AWS CloudFormation, follow these steps:
 
 1. Clone this repository to your local machine or download the CloudFormation YAML template (`sre.yml`).
 
+    git Repo URL :   https://github.com/Imtiazwaraich/SRE-assignment.git    (publically permited)
+
 2. Open a terminal or command prompt and navigate to the directory containing the CloudFormation template.
 
 3. Run the following AWS CLI command to create the CloudFormation stack:
@@ -25,7 +27,7 @@ To deploy the infrastructure using AWS CloudFormation, follow these steps:
    ```shell
    aws cloudformation create-stack --stack-name sre-infrastructure-stack --template-body file://sre-Assignment.yml
 
-Replace SRE-infrastructure-stack with your desired stack name.
+Replace sre-infrastructure-stack with your desired stack name.
 
 Wait for the stack creation to complete. You can monitor the progress either through the AWS Management Console or by running the following AWS CLI command:
 
