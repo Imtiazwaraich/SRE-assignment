@@ -16,26 +16,26 @@ Before you begin, make sure you have the following prerequisites:
 
 To deploy the infrastructure using AWS CloudFormation, follow these steps:
 
-1. Clone this repository to your local machine or download the CloudFormation YAML template (`template.yml`).
+1. Clone this repository to your local machine or download the CloudFormation YAML template (`demo.yml`).
 
 2. Open a terminal or command prompt and navigate to the directory containing the CloudFormation template.
 
 3. Run the following AWS CLI command to create the CloudFormation stack:
 
    ```shell
-   aws cloudformation create-stack --stack-name my-infrastructure-stack --template-body file://template.yml
+   aws cloudformation create-stack --stack-name SRE-infrastructure-stack --template-body file://SRE-Assignment.yml
 
-Replace my-infrastructure-stack with your desired stack name.
+Replace SRE-infrastructure-stack with your desired stack name.
 
 Wait for the stack creation to complete. You can monitor the progress either through the AWS Management Console or by running the following AWS CLI command:
 
-aws cloudformation describe-stacks --stack-name my-infrastructure-stack
+aws cloudformation describe-stacks --stack-name SRE-infrastructure-stack
 
-Replace my-infrastructure-stack with your stack name.
+Replace SRE-infrastructure-stack with your stack name.
 
 Once the stack creation is complete, you can retrieve the outputs of the stack using the following AWS CLI command:
 
-aws cloudformation describe-stacks --stack-name my-infrastructure-stack --query 'Stacks[0].Outputs'
+aws cloudformation describe-stacks --stack-name SRE-infrastructure-stack --query 'Stacks[0].Outputs'
 
 The outputs will contain the information about the created resources, such as VPC ID, subnets, and more.
 
@@ -43,6 +43,6 @@ The outputs will contain the information about the created resources, such as VP
 
 To delete the infrastructure and clean up resources, you can run the following AWS CLI command:
 
-aws cloudformation delete-stack --stack-name my-infrastructure-stack
+aws cloudformation delete-stack --stack-name SRE-infrastructure-stack
 
-Replace my-infrastructure-stack with your stack name. Wait for the deletion to complete.
+Replace SER-infrastructure-stack with your stack name. Wait for the deletion to complete.
